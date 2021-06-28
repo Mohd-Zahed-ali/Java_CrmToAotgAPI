@@ -4,6 +4,7 @@ import com.crm.aotg.integration.account.service.CLAccountService;
 import com.crm.aotg.integration.auth.service.CLAOTGAuthService;
 import com.crm.aotg.integration.common.dto.CLBaseStatusDto;
 import com.crm.aotg.integration.product.service.CLProductService;
+import com.crm.aotg.integration.salesorder.service.CLSalesOrderService;
 import com.mashape.unirest.http.HttpMethod;
 import org.json.HTTP;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +23,9 @@ public class IntegrationController {
     @Autowired
     private CLProductService clProductService;
 
+    @Autowired
+    private CLSalesOrderService clSalesOrderService;
+
     @GetMapping(value = "/test")
     public String test(){
         return claotgAuthService.getNewAccessToken();
@@ -38,8 +42,8 @@ public class IntegrationController {
         return clProductService.createOrUpdateProduct(accessToken,transId,ccode,userId);
     }
 
-    @PostMapping(value="/Integrate/Salesorder")
-    public void createOrUpdateSalesorder(@RequestParam String accessToken, @RequestParam String transId, @RequestParam String ccode, @RequestParam String userId){
-
+    @RequestMapping(value="/Integrate/Salesorder",method = { RequestMethod.GET, RequestMethod.POST })
+    public CLBaseStatusDto createOrUpdateSalesorder(@RequestParam String accessToken, @RequestParam String transId, @RequestParam String ccode, @RequestParam String userId){
+        return clSalesOrderService.createOrUpdateSalesOrder(accessToken,transId,ccode,userId);
     }
 }

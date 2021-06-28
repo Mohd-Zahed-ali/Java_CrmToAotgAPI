@@ -70,6 +70,9 @@ public class LineItem implements Serializable
     @SerializedName("Amount")
     @Expose
     private String amount;
+    @SerializedName("iAOTGBodyId")
+    @Expose
+    private String iAOTGBodyId;
     private final static long serialVersionUID = -4423524936498544650L;
 
     /**
@@ -101,8 +104,9 @@ public class LineItem implements Serializable
      * @param productIdName
      * @param productIdCode
      * @param createdById
+     * @param iAOTGBodyId
      */
-    public LineItem(String bodyId, String productCategoryName, String productCategoryId, String productCategoryCode, String productCode, String uoMName, String uoMId, String uoMCode, String finalAmount, String productIdName, String productIdId, String productIdCode, String quantity, String prodDescription, String discount, String salesPrice, String createdByName, String createdById, String createdDate, String amount) {
+    public LineItem(String bodyId, String productCategoryName, String productCategoryId, String productCategoryCode, String productCode, String uoMName, String uoMId, String uoMCode, String finalAmount, String productIdName, String productIdId, String productIdCode, String quantity, String prodDescription, String discount, String salesPrice, String createdByName, String createdById, String createdDate, String amount,String iAOTGBodyId) {
         super();
         this.bodyId = bodyId;
         this.productCategoryName = productCategoryName;
@@ -124,6 +128,7 @@ public class LineItem implements Serializable
         this.createdById = createdById;
         this.createdDate = createdDate;
         this.amount = amount;
+        this.iAOTGBodyId=iAOTGBodyId;
     }
 
     public String getBodyId() {
@@ -286,6 +291,10 @@ public class LineItem implements Serializable
         this.amount = amount;
     }
 
+    public  String getIAOTGBodyId() {return  iAOTGBodyId; }
+
+    public void setiAOTGBodyId(String iAOTGBodyId){ this.iAOTGBodyId = iAOTGBodyId;}
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -369,6 +378,10 @@ public class LineItem implements Serializable
         sb.append("amount");
         sb.append('=');
         sb.append(((this.amount == null)?"<null>":this.amount));
+        sb.append(',');
+        sb.append("iaootgId");
+        sb.append('=');
+        sb.append(((this.iAOTGBodyId == null)?"<null>":this.iAOTGBodyId));
         sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');

@@ -51,7 +51,7 @@ public class CLConstants {
     public static final String CRM_UPDATE_PRODUCT = "/crmservices/rest/modules/V1.0/Product/%s";
 
     //SALESORDER
-    public static final String CRM_GET_SALESORDER = "/crmservices/rest/modules/V1.0/Salesorder/%";
+    public static final String CRM_GET_SALESORDER = "/crmservices/rest/modules/V1.0/Salesorder/%s";
     public static final String CRM_UPDATE_SALESORDER = "/crmservices/rest/modules/V1.0/Salesorder/%s";
 
 }

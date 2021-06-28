@@ -131,6 +131,7 @@ public class CLAccountService {
                                     Log.info("ResultJSON_COMPLETED=====>" + sResultJson);
                                     JsonObject objJson = (new JsonParser()).parse(sResultJson).getAsJsonObject();
                                     String sNewAotgId = objJson.get("Id").toString();
+                                    String sNewAccNo = objJson.get("AccNo").toString();
                                     Log.info("AOTG ID GENERATED : " + sNewAotgId);
 
                                     if(!sAOTGId.equals("")){
@@ -141,7 +142,7 @@ public class CLAccountService {
                                     }
 
                                     if(!sNewAotgId.equals("")){
-                                        boolean bIsAccUpdated = updateAccountWithAOTGId(transId,accessToken,sNewAotgId);
+                                        boolean bIsAccUpdated = updateAccountWithAOTGId(transId,accessToken,sNewAotgId,sNewAccNo);
 
                                         clStatus.setStatus(bIsAccUpdated?1:0);
                                         clStatus.setMsg(bIsAccUpdated?"AOTG Record Created.":"");
@@ -244,7 +245,7 @@ public class CLAccountService {
         }).start();
     }
 
-    public boolean updateAccountWithAOTGId(String trandId,String accessToken,String sAOTGId){
+    public boolean updateAccountWithAOTGId(String trandId,String accessToken,String sAOTGId,String sNewAccNo){
         String CRM_URL = clUtils.getValueFromPropFile("crm.url");
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         JsonObject objOfRecords = new JsonObject();
@@ -254,7 +255,7 @@ public class CLAccountService {
         JsonObject objRecords = new JsonObject();
         objRecords.addProperty("records",gson.toJson(arrOfRecords));
         //String  sJson = gson.toJson(objRecords);
-        String sJson = "{ records:[{ iAutoCountId :"+sAOTGId+" , bRestrictWF : true }] }";
+        String sJson = "{ records:[{ iAutoCountId :"+sAOTGId+" , bRestrictWF : true , Code : "+sNewAccNo+" }] }";
         String sUrl = CRM_URL+String.format(CLConstants.CRM_UPDATE_ACCOUNT,trandId);
         Log.info("Updating Account with AOTG Id Json==="+sJson+", URl=="+sUrl);
         Map<String,String > crm_auth = new HashMap<String,String>();
