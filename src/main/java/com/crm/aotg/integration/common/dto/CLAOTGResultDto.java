@@ -2,12 +2,12 @@ package com.crm.aotg.integration.common.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class CLAOTGResultDto implements Serializable
-{
+public class CLAOTGResultDto implements Serializable {
 
     @SerializedName("RequestId")
     @Expose
@@ -67,13 +67,11 @@ public class CLAOTGResultDto implements Serializable
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public CLAOTGResultDto() {
     }
 
     /**
-     *
      * @param resultJson
      * @param hostName
      * @param processingInterval
@@ -265,78 +263,78 @@ public class CLAOTGResultDto implements Serializable
         sb.append(CLAOTGResultDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("requestId");
         sb.append('=');
-        sb.append(((this.requestId == null)?"<null>":this.requestId));
+        sb.append(((this.requestId == null) ? "<null>" : this.requestId));
         sb.append(',');
         sb.append("requestName");
         sb.append('=');
-        sb.append(((this.requestName == null)?"<null>":this.requestName));
+        sb.append(((this.requestName == null) ? "<null>" : this.requestName));
         sb.append(',');
         sb.append("hostName");
         sb.append('=');
-        sb.append(((this.hostName == null)?"<null>":this.hostName));
+        sb.append(((this.hostName == null) ? "<null>" : this.hostName));
         sb.append(',');
         sb.append("iPAddress");
         sb.append('=');
-        sb.append(((this.iPAddress == null)?"<null>":this.iPAddress));
+        sb.append(((this.iPAddress == null) ? "<null>" : this.iPAddress));
         sb.append(',');
         sb.append("requestTypeName");
         sb.append('=');
-        sb.append(((this.requestTypeName == null)?"<null>":this.requestTypeName));
+        sb.append(((this.requestTypeName == null) ? "<null>" : this.requestTypeName));
         sb.append(',');
         sb.append("resultJson");
         sb.append('=');
-        sb.append(((this.resultJson == null)?"<null>":this.resultJson));
+        sb.append(((this.resultJson == null) ? "<null>" : this.resultJson));
         sb.append(',');
         sb.append("requestParamJson");
         sb.append('=');
-        sb.append(((this.requestParamJson == null)?"<null>":this.requestParamJson));
+        sb.append(((this.requestParamJson == null) ? "<null>" : this.requestParamJson));
         sb.append(',');
         sb.append("resultStream");
         sb.append('=');
-        sb.append(((this.resultStream == null)?"<null>":this.resultStream));
+        sb.append(((this.resultStream == null) ? "<null>" : this.resultStream));
         sb.append(',');
         sb.append("resultTypeName");
         sb.append('=');
-        sb.append(((this.resultTypeName == null)?"<null>":this.resultTypeName));
+        sb.append(((this.resultTypeName == null) ? "<null>" : this.resultTypeName));
         sb.append(',');
         sb.append("status");
         sb.append('=');
-        sb.append(((this.status == null)?"<null>":this.status));
+        sb.append(((this.status == null) ? "<null>" : this.status));
         sb.append(',');
         sb.append("version");
         sb.append('=');
-        sb.append(((this.version == null)?"<null>":this.version));
+        sb.append(((this.version == null) ? "<null>" : this.version));
         sb.append(',');
         sb.append("accountBookInfo");
         sb.append('=');
-        sb.append(((this.accountBookInfo == null)?"<null>":this.accountBookInfo));
+        sb.append(((this.accountBookInfo == null) ? "<null>" : this.accountBookInfo));
         sb.append(',');
         sb.append("accountBookDBInfo");
         sb.append('=');
-        sb.append(((this.accountBookDBInfo == null)?"<null>":this.accountBookDBInfo));
+        sb.append(((this.accountBookDBInfo == null) ? "<null>" : this.accountBookDBInfo));
         sb.append(',');
         sb.append("timestamp");
         sb.append('=');
-        sb.append(((this.timestamp == null)?"<null>":this.timestamp));
+        sb.append(((this.timestamp == null) ? "<null>" : this.timestamp));
         sb.append(',');
         sb.append("resultedTimestamp");
         sb.append('=');
-        sb.append(((this.resultedTimestamp == null)?"<null>":this.resultedTimestamp));
+        sb.append(((this.resultedTimestamp == null) ? "<null>" : this.resultedTimestamp));
         sb.append(',');
         sb.append("processingInterval");
         sb.append('=');
-        sb.append(((this.processingInterval == null)?"<null>":this.processingInterval));
+        sb.append(((this.processingInterval == null) ? "<null>" : this.processingInterval));
         sb.append(',');
         sb.append("inQueueInterval");
         sb.append('=');
-        sb.append(((this.inQueueInterval == null)?"<null>":this.inQueueInterval));
+        sb.append(((this.inQueueInterval == null) ? "<null>" : this.inQueueInterval));
         sb.append(',');
         sb.append("resultFileURL");
         sb.append('=');
-        sb.append(((this.resultFileURL == null)?"<null>":this.resultFileURL));
+        sb.append(((this.resultFileURL == null) ? "<null>" : this.resultFileURL));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

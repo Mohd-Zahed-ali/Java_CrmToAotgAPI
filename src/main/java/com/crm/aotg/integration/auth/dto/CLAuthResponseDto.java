@@ -20,13 +20,11 @@ public class CLAuthResponseDto {
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public CLAuthResponseDto() {
     }
 
     /**
-     *
      * @param expireTimestamp
      * @param name
      * @param id
@@ -78,22 +76,22 @@ public class CLAuthResponseDto {
         sb.append(CLAuthRequestDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("id");
         sb.append('=');
-        sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(((this.id == null) ? "<null>" : this.id));
         sb.append(',');
         sb.append("name");
         sb.append('=');
-        sb.append(((this.name == null)?"<null>":this.name));
+        sb.append(((this.name == null) ? "<null>" : this.name));
         sb.append(',');
         sb.append("accessToken");
         sb.append('=');
-        sb.append(((this.accessToken == null)?"<null>":this.accessToken));
+        sb.append(((this.accessToken == null) ? "<null>" : this.accessToken));
         sb.append(',');
         sb.append("expireTimestamp");
         sb.append('=');
-        sb.append(((this.expireTimestamp == null)?"<null>":this.expireTimestamp));
+        sb.append(((this.expireTimestamp == null) ? "<null>" : this.expireTimestamp));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

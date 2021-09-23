@@ -4,12 +4,12 @@ package com.crm.aotg.integration.product.dto;
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class CLProductDto implements Serializable
-{
+public class CLProductDto implements Serializable {
 
     @SerializedName("Id")
     @Expose
@@ -93,13 +93,11 @@ public class CLProductDto implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public CLProductDto() {
     }
 
     /**
-     * 
      * @param itemType
      * @param tariffCode
      * @param itemCode
@@ -371,110 +369,110 @@ public class CLProductDto implements Serializable
         sb.append(CLProductDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("id");
         sb.append('=');
-        sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(((this.id == null) ? "<null>" : this.id));
         sb.append(',');
         sb.append("itemCode");
         sb.append('=');
-        sb.append(((this.itemCode == null)?"<null>":this.itemCode));
+        sb.append(((this.itemCode == null) ? "<null>" : this.itemCode));
         sb.append(',');
         sb.append("itemDescription");
         sb.append('=');
-        sb.append(((this.itemDescription == null)?"<null>":this.itemDescription));
+        sb.append(((this.itemDescription == null) ? "<null>" : this.itemDescription));
         sb.append(',');
         sb.append("itemDescription2");
         sb.append('=');
-        sb.append(((this.itemDescription2 == null)?"<null>":this.itemDescription2));
+        sb.append(((this.itemDescription2 == null) ? "<null>" : this.itemDescription2));
         sb.append(',');
         sb.append("itemGroup");
         sb.append('=');
-        sb.append(((this.itemGroup == null)?"<null>":this.itemGroup));
+        sb.append(((this.itemGroup == null) ? "<null>" : this.itemGroup));
         sb.append(',');
         sb.append("itemType");
         sb.append('=');
-        sb.append(((this.itemType == null)?"<null>":this.itemType));
+        sb.append(((this.itemType == null) ? "<null>" : this.itemType));
         sb.append(',');
         sb.append("baseUOM");
         sb.append('=');
-        sb.append(((this.baseUOM == null)?"<null>":this.baseUOM));
+        sb.append(((this.baseUOM == null) ? "<null>" : this.baseUOM));
         sb.append(',');
         sb.append("salesUOM");
         sb.append('=');
-        sb.append(((this.salesUOM == null)?"<null>":this.salesUOM));
+        sb.append(((this.salesUOM == null) ? "<null>" : this.salesUOM));
         sb.append(',');
         sb.append("purchaseUOM");
         sb.append('=');
-        sb.append(((this.purchaseUOM == null)?"<null>":this.purchaseUOM));
+        sb.append(((this.purchaseUOM == null) ? "<null>" : this.purchaseUOM));
         sb.append(',');
         sb.append("reportUOM");
         sb.append('=');
-        sb.append(((this.reportUOM == null)?"<null>":this.reportUOM));
+        sb.append(((this.reportUOM == null) ? "<null>" : this.reportUOM));
         sb.append(',');
         sb.append("uom");
         sb.append('=');
-        sb.append(((this.uom == null)?"<null>":this.uom));
+        sb.append(((this.uom == null) ? "<null>" : this.uom));
         sb.append(',');
         sb.append("isActive");
         sb.append('=');
-        sb.append(((this.isActive == null)?"<null>":this.isActive));
+        sb.append(((this.isActive == null) ? "<null>" : this.isActive));
         sb.append(',');
         sb.append("discontinued");
         sb.append('=');
-        sb.append(((this.discontinued == null)?"<null>":this.discontinued));
+        sb.append(((this.discontinued == null) ? "<null>" : this.discontinued));
         sb.append(',');
         sb.append("dutyRate");
         sb.append('=');
-        sb.append(((this.dutyRate == null)?"<null>":this.dutyRate));
+        sb.append(((this.dutyRate == null) ? "<null>" : this.dutyRate));
         sb.append(',');
         sb.append("supplyTaxCode");
         sb.append('=');
-        sb.append(((this.supplyTaxCode == null)?"<null>":this.supplyTaxCode));
+        sb.append(((this.supplyTaxCode == null) ? "<null>" : this.supplyTaxCode));
         sb.append(',');
         sb.append("purchaseTaxCode");
         sb.append('=');
-        sb.append(((this.purchaseTaxCode == null)?"<null>":this.purchaseTaxCode));
+        sb.append(((this.purchaseTaxCode == null) ? "<null>" : this.purchaseTaxCode));
         sb.append(',');
         sb.append("leadTime");
         sb.append('=');
-        sb.append(((this.leadTime == null)?"<null>":this.leadTime));
+        sb.append(((this.leadTime == null) ? "<null>" : this.leadTime));
         sb.append(',');
         sb.append("imageFileName");
         sb.append('=');
-        sb.append(((this.imageFileName == null)?"<null>":this.imageFileName));
+        sb.append(((this.imageFileName == null) ? "<null>" : this.imageFileName));
         sb.append(',');
         sb.append("furtherDescription");
         sb.append('=');
-        sb.append(((this.furtherDescription == null)?"<null>":this.furtherDescription));
+        sb.append(((this.furtherDescription == null) ? "<null>" : this.furtherDescription));
         sb.append(',');
         sb.append("isStockControl");
         sb.append('=');
-        sb.append(((this.isStockControl == null)?"<null>":this.isStockControl));
+        sb.append(((this.isStockControl == null) ? "<null>" : this.isStockControl));
         sb.append(',');
         sb.append("isBackOrderControl");
         sb.append('=');
-        sb.append(((this.isBackOrderControl == null)?"<null>":this.isBackOrderControl));
+        sb.append(((this.isBackOrderControl == null) ? "<null>" : this.isBackOrderControl));
         sb.append(',');
         sb.append("isAutoUOMConversion");
         sb.append('=');
-        sb.append(((this.isAutoUOMConversion == null)?"<null>":this.isAutoUOMConversion));
+        sb.append(((this.isAutoUOMConversion == null) ? "<null>" : this.isAutoUOMConversion));
         sb.append(',');
         sb.append("costingMethod");
         sb.append('=');
-        sb.append(((this.costingMethod == null)?"<null>":this.costingMethod));
+        sb.append(((this.costingMethod == null) ? "<null>" : this.costingMethod));
         sb.append(',');
         sb.append("purchaseTaxRate");
         sb.append('=');
-        sb.append(((this.purchaseTaxRate == null)?"<null>":this.purchaseTaxRate));
+        sb.append(((this.purchaseTaxRate == null) ? "<null>" : this.purchaseTaxRate));
         sb.append(',');
         sb.append("supplyTaxRate");
         sb.append('=');
-        sb.append(((this.supplyTaxRate == null)?"<null>":this.supplyTaxRate));
+        sb.append(((this.supplyTaxRate == null) ? "<null>" : this.supplyTaxRate));
         sb.append(',');
         sb.append("tariffCode");
         sb.append('=');
-        sb.append(((this.tariffCode == null)?"<null>":this.tariffCode));
+        sb.append(((this.tariffCode == null) ? "<null>" : this.tariffCode));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

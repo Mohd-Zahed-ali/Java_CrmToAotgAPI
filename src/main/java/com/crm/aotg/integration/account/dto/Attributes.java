@@ -3,12 +3,12 @@ package com.crm.aotg.integration.account.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class Attributes implements Serializable
-{
+public class Attributes implements Serializable {
 
     @SerializedName("Account")
     @Expose
@@ -17,13 +17,11 @@ public class Attributes implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public Attributes() {
     }
 
     /**
-     * 
      * @param account
      */
     public Attributes(String account) {
@@ -45,10 +43,10 @@ public class Attributes implements Serializable
         sb.append(Attributes.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("account");
         sb.append('=');
-        sb.append(((this.account == null)?"<null>":this.account));
+        sb.append(((this.account == null) ? "<null>" : this.account));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

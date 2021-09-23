@@ -3,12 +3,12 @@ package com.crm.aotg.integration.salesorder.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class LineItems2 implements Serializable
-{
+public class LineItems2 implements Serializable {
 
     @SerializedName("BodyId")
     @Expose
@@ -26,13 +26,11 @@ public class LineItems2 implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public LineItems2() {
     }
 
     /**
-     * 
      * @param attachment
      * @param bodyId
      * @param paymentDate
@@ -81,25 +79,25 @@ public class LineItems2 implements Serializable
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(LineItems2 .class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
+        sb.append(LineItems2.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("bodyId");
         sb.append('=');
-        sb.append(((this.bodyId == null)?"<null>":this.bodyId));
+        sb.append(((this.bodyId == null) ? "<null>" : this.bodyId));
         sb.append(',');
         sb.append("attachment");
         sb.append('=');
-        sb.append(((this.attachment == null)?"<null>":this.attachment));
+        sb.append(((this.attachment == null) ? "<null>" : this.attachment));
         sb.append(',');
         sb.append("paymentDate");
         sb.append('=');
-        sb.append(((this.paymentDate == null)?"<null>":this.paymentDate));
+        sb.append(((this.paymentDate == null) ? "<null>" : this.paymentDate));
         sb.append(',');
         sb.append("paymentAmount");
         sb.append('=');
-        sb.append(((this.paymentAmount == null)?"<null>":this.paymentAmount));
+        sb.append(((this.paymentAmount == null) ? "<null>" : this.paymentAmount));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

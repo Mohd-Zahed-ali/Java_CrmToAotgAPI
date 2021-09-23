@@ -10,8 +10,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class CLCRMAccountDto implements Serializable
-{
+public class CLCRMAccountDto implements Serializable {
 
     @SerializedName("count")
     @Expose
@@ -32,13 +31,11 @@ public class CLCRMAccountDto implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public CLCRMAccountDto() {
     }
 
     /**
-     * 
      * @param records
      * @param count
      * @param message
@@ -100,26 +97,26 @@ public class CLCRMAccountDto implements Serializable
         sb.append(CLCRMAccountDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("count");
         sb.append('=');
-        sb.append(((this.count == null)?"<null>":this.count));
+        sb.append(((this.count == null) ? "<null>" : this.count));
         sb.append(',');
         sb.append("records");
         sb.append('=');
-        sb.append(((this.records == null)?"<null>":this.records));
+        sb.append(((this.records == null) ? "<null>" : this.records));
         sb.append(',');
         sb.append("message");
         sb.append('=');
-        sb.append(((this.message == null)?"<null>":this.message));
+        sb.append(((this.message == null) ? "<null>" : this.message));
         sb.append(',');
         sb.append("status");
         sb.append('=');
-        sb.append(((this.status == null)?"<null>":this.status));
+        sb.append(((this.status == null) ? "<null>" : this.status));
         sb.append(',');
         sb.append("errors");
         sb.append('=');
-        sb.append(((this.errors == null)?"<null>":this.errors.toString()));
+        sb.append(((this.errors == null) ? "<null>" : this.errors.toString()));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

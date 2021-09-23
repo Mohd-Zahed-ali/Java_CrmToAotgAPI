@@ -4,12 +4,12 @@ package com.crm.aotg.integration.salesorder.dto;
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class CLSalesOrderDto implements Serializable
-{
+public class CLSalesOrderDto implements Serializable {
 
     @SerializedName("Debtor")
     @Expose
@@ -153,13 +153,11 @@ public class CLSalesOrderDto implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public CLSalesOrderDto() {
     }
 
     /**
-     * 
      * @param documentDate
      * @param detailsLine
      * @param note
@@ -631,190 +629,190 @@ public class CLSalesOrderDto implements Serializable
         sb.append(CLSalesOrderDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("debtor");
         sb.append('=');
-        sb.append(((this.debtor == null)?"<null>":this.debtor));
+        sb.append(((this.debtor == null) ? "<null>" : this.debtor));
         sb.append(',');
         sb.append("debtorName");
         sb.append('=');
-        sb.append(((this.debtorName == null)?"<null>":this.debtorName));
+        sb.append(((this.debtorName == null) ? "<null>" : this.debtorName));
         sb.append(',');
         sb.append("contact");
         sb.append('=');
-        sb.append(((this.contact == null)?"<null>":this.contact));
+        sb.append(((this.contact == null) ? "<null>" : this.contact));
         sb.append(',');
         sb.append("fax");
         sb.append('=');
-        sb.append(((this.fax == null)?"<null>":this.fax));
+        sb.append(((this.fax == null) ? "<null>" : this.fax));
         sb.append(',');
         sb.append("phone");
         sb.append('=');
-        sb.append(((this.phone == null)?"<null>":this.phone));
+        sb.append(((this.phone == null) ? "<null>" : this.phone));
         sb.append(',');
         sb.append("deliverAddress");
         sb.append('=');
-        sb.append(((this.deliverAddress == null)?"<null>":this.deliverAddress));
+        sb.append(((this.deliverAddress == null) ? "<null>" : this.deliverAddress));
         sb.append(',');
         sb.append("invoiceAddress");
         sb.append('=');
-        sb.append(((this.invoiceAddress == null)?"<null>":this.invoiceAddress));
+        sb.append(((this.invoiceAddress == null) ? "<null>" : this.invoiceAddress));
         sb.append(',');
         sb.append("agent");
         sb.append('=');
-        sb.append(((this.agent == null)?"<null>":this.agent));
+        sb.append(((this.agent == null) ? "<null>" : this.agent));
         sb.append(',');
         sb.append("salesLocation");
         sb.append('=');
-        sb.append(((this.salesLocation == null)?"<null>":this.salesLocation));
+        sb.append(((this.salesLocation == null) ? "<null>" : this.salesLocation));
         sb.append(',');
         sb.append("documentDate");
         sb.append('=');
-        sb.append(((this.documentDate == null)?"<null>":this.documentDate));
+        sb.append(((this.documentDate == null) ? "<null>" : this.documentDate));
         sb.append(',');
         sb.append("creditTerm");
         sb.append('=');
-        sb.append(((this.creditTerm == null)?"<null>":this.creditTerm));
+        sb.append(((this.creditTerm == null) ? "<null>" : this.creditTerm));
         sb.append(',');
         sb.append("shipVia");
         sb.append('=');
-        sb.append(((this.shipVia == null)?"<null>":this.shipVia));
+        sb.append(((this.shipVia == null) ? "<null>" : this.shipVia));
         sb.append(',');
         sb.append("shipInfo");
         sb.append('=');
-        sb.append(((this.shipInfo == null)?"<null>":this.shipInfo));
+        sb.append(((this.shipInfo == null) ? "<null>" : this.shipInfo));
         sb.append(',');
         sb.append("inclusiveTax");
         sb.append('=');
-        sb.append(((this.inclusiveTax == null)?"<null>":this.inclusiveTax));
+        sb.append(((this.inclusiveTax == null) ? "<null>" : this.inclusiveTax));
         sb.append(',');
         sb.append("description");
         sb.append('=');
-        sb.append(((this.description == null)?"<null>":this.description));
+        sb.append(((this.description == null) ? "<null>" : this.description));
         sb.append(',');
         sb.append("ref");
         sb.append('=');
-        sb.append(((this.ref == null)?"<null>":this.ref));
+        sb.append(((this.ref == null) ? "<null>" : this.ref));
         sb.append(',');
         sb.append("refDocNo");
         sb.append('=');
-        sb.append(((this.refDocNo == null)?"<null>":this.refDocNo));
+        sb.append(((this.refDocNo == null) ? "<null>" : this.refDocNo));
         sb.append(',');
         sb.append("note");
         sb.append('=');
-        sb.append(((this.note == null)?"<null>":this.note));
+        sb.append(((this.note == null) ? "<null>" : this.note));
         sb.append(',');
         sb.append("detailsLine");
         sb.append('=');
-        sb.append(((this.detailsLine == null)?"<null>":this.detailsLine));
+        sb.append(((this.detailsLine == null) ? "<null>" : this.detailsLine));
         sb.append(',');
         sb.append("transferDetails");
         sb.append('=');
-        sb.append(((this.transferDetails == null)?"<null>":this.transferDetails));
+        sb.append(((this.transferDetails == null) ? "<null>" : this.transferDetails));
         sb.append(',');
         sb.append("id");
         sb.append('=');
-        sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(((this.id == null) ? "<null>" : this.id));
         sb.append(',');
         sb.append("number");
         sb.append('=');
-        sb.append(((this.number == null)?"<null>":this.number));
+        sb.append(((this.number == null) ? "<null>" : this.number));
         sb.append(',');
         sb.append("taxAmount");
         sb.append('=');
-        sb.append(((this.taxAmount == null)?"<null>":this.taxAmount));
+        sb.append(((this.taxAmount == null) ? "<null>" : this.taxAmount));
         sb.append(',');
         sb.append("total");
         sb.append('=');
-        sb.append(((this.total == null)?"<null>":this.total));
+        sb.append(((this.total == null) ? "<null>" : this.total));
         sb.append(',');
         sb.append("netTotal");
         sb.append('=');
-        sb.append(((this.netTotal == null)?"<null>":this.netTotal));
+        sb.append(((this.netTotal == null) ? "<null>" : this.netTotal));
         sb.append(',');
         sb.append("isRoundAdj");
         sb.append('=');
-        sb.append(((this.isRoundAdj == null)?"<null>":this.isRoundAdj));
+        sb.append(((this.isRoundAdj == null) ? "<null>" : this.isRoundAdj));
         sb.append(',');
         sb.append("roundingMethod");
         sb.append('=');
-        sb.append(((this.roundingMethod == null)?"<null>":this.roundingMethod));
+        sb.append(((this.roundingMethod == null) ? "<null>" : this.roundingMethod));
         sb.append(',');
         sb.append("roundAdj");
         sb.append('=');
-        sb.append(((this.roundAdj == null)?"<null>":this.roundAdj));
+        sb.append(((this.roundAdj == null) ? "<null>" : this.roundAdj));
         sb.append(',');
         sb.append("isCancelled");
         sb.append('=');
-        sb.append(((this.isCancelled == null)?"<null>":this.isCancelled));
+        sb.append(((this.isCancelled == null) ? "<null>" : this.isCancelled));
         sb.append(',');
         sb.append("toDocType");
         sb.append('=');
-        sb.append(((this.toDocType == null)?"<null>":this.toDocType));
+        sb.append(((this.toDocType == null) ? "<null>" : this.toDocType));
         sb.append(',');
         sb.append("toDocKey");
         sb.append('=');
-        sb.append(((this.toDocKey == null)?"<null>":this.toDocKey));
+        sb.append(((this.toDocKey == null) ? "<null>" : this.toDocKey));
         sb.append(',');
         sb.append("isTransferred");
         sb.append('=');
-        sb.append(((this.isTransferred == null)?"<null>":this.isTransferred));
+        sb.append(((this.isTransferred == null) ? "<null>" : this.isTransferred));
         sb.append(',');
         sb.append("transferFromQuotationDocument");
         sb.append('=');
-        sb.append(((this.transferFromQuotationDocument == null)?"<null>":this.transferFromQuotationDocument));
+        sb.append(((this.transferFromQuotationDocument == null) ? "<null>" : this.transferFromQuotationDocument));
         sb.append(',');
         sb.append("currencyCode");
         sb.append('=');
-        sb.append(((this.currencyCode == null)?"<null>":this.currencyCode));
+        sb.append(((this.currencyCode == null) ? "<null>" : this.currencyCode));
         sb.append(',');
         sb.append("currencySymbol");
         sb.append('=');
-        sb.append(((this.currencySymbol == null)?"<null>":this.currencySymbol));
+        sb.append(((this.currencySymbol == null) ? "<null>" : this.currencySymbol));
         sb.append(',');
         sb.append("currencyRate");
         sb.append('=');
-        sb.append(((this.currencyRate == null)?"<null>":this.currencyRate));
+        sb.append(((this.currencyRate == null) ? "<null>" : this.currencyRate));
         sb.append(',');
         sb.append("localNetTotal");
         sb.append('=');
-        sb.append(((this.localNetTotal == null)?"<null>":this.localNetTotal));
+        sb.append(((this.localNetTotal == null) ? "<null>" : this.localNetTotal));
         sb.append(',');
         sb.append("localTaxAmount");
         sb.append('=');
-        sb.append(((this.localTaxAmount == null)?"<null>":this.localTaxAmount));
+        sb.append(((this.localTaxAmount == null) ? "<null>" : this.localTaxAmount));
         sb.append(',');
         sb.append("branch");
         sb.append('=');
-        sb.append(((this.branch == null)?"<null>":this.branch));
+        sb.append(((this.branch == null) ? "<null>" : this.branch));
         sb.append(',');
         sb.append("salesTaxExemptionNo");
         sb.append('=');
-        sb.append(((this.salesTaxExemptionNo == null)?"<null>":this.salesTaxExemptionNo));
+        sb.append(((this.salesTaxExemptionNo == null) ? "<null>" : this.salesTaxExemptionNo));
         sb.append(',');
         sb.append("salesTaxExemptionExpiryDate");
         sb.append('=');
-        sb.append(((this.salesTaxExemptionExpiryDate == null)?"<null>":this.salesTaxExemptionExpiryDate));
+        sb.append(((this.salesTaxExemptionExpiryDate == null) ? "<null>" : this.salesTaxExemptionExpiryDate));
         sb.append(',');
         sb.append("transferable");
         sb.append('=');
-        sb.append(((this.transferable == null)?"<null>":this.transferable));
+        sb.append(((this.transferable == null) ? "<null>" : this.transferable));
         sb.append(',');
         sb.append("enableBranch");
         sb.append('=');
-        sb.append(((this.enableBranch == null)?"<null>":this.enableBranch));
+        sb.append(((this.enableBranch == null) ? "<null>" : this.enableBranch));
         sb.append(',');
         sb.append("validateBackOrder");
         sb.append('=');
-        sb.append(((this.validateBackOrder == null)?"<null>":this.validateBackOrder));
+        sb.append(((this.validateBackOrder == null) ? "<null>" : this.validateBackOrder));
         sb.append(',');
         sb.append("validateMinMaxPrice");
         sb.append('=');
-        sb.append(((this.validateMinMaxPrice == null)?"<null>":this.validateMinMaxPrice));
+        sb.append(((this.validateMinMaxPrice == null) ? "<null>" : this.validateMinMaxPrice));
         sb.append(',');
         sb.append("lastModified");
         sb.append('=');
-        sb.append(((this.lastModified == null)?"<null>":this.lastModified));
+        sb.append(((this.lastModified == null) ? "<null>" : this.lastModified));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

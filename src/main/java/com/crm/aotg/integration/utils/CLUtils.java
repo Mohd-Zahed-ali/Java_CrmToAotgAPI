@@ -26,7 +26,7 @@ public class CLUtils implements IUtils {
     public static String TEMP_PATH = System.getenv("TEMP");
 
     @Override
-    public HttpResponse<String> sendGetRequest(String sUrl,Map<String,String> headers){
+    public HttpResponse<String> sendGetRequest(String sUrl, Map<String, String> headers) {
         HttpResponse<String> response = null;
         Unirest.setTimeouts(0, 0);
         try {
@@ -41,7 +41,7 @@ public class CLUtils implements IUtils {
     }
 
     @Override
-    public HttpResponse<String> sendPostRequest(String sUrl, Map<String,String> headers,String sJson){
+    public HttpResponse<String> sendPostRequest(String sUrl, Map<String, String> headers, String sJson) {
         HttpResponse<String> response = null;
         Unirest.setTimeouts(0, 0);
         try {
@@ -87,32 +87,24 @@ public class CLUtils implements IUtils {
         return response;
     }
 
-    public String getValueFromPropFile(String sKey){
+    public String getValueFromPropFile(String sKey) {
         return env.getProperty(sKey);
     }
 
     @Override
-    public void log(String sDate){
+    public void log(String sDate) {
     }
 
-    public static String isFileExist(String sFilepath,Boolean bDoCreateIfNotExits) throws IOException
-    {
+    public static String isFileExist(String sFilepath, Boolean bDoCreateIfNotExits) throws IOException {
 
         File fl = new File(sFilepath);
-        if(fl.exists())
-        {
+        if (fl.exists()) {
             return sFilepath;
-        }
-        else
-        {
-            if(bDoCreateIfNotExits)
-            {
-                if(fl.createNewFile())
-                {
+        } else {
+            if (bDoCreateIfNotExits) {
+                if (fl.createNewFile()) {
                     return sFilepath;
-                }
-                else
-                {
+                } else {
                     return null;
                 }
             }
@@ -121,25 +113,22 @@ public class CLUtils implements IUtils {
         return null;
     }
 
-    public static String getCurrentDateAsString()
-    {
+    public static String getCurrentDateAsString() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
         Date date = new Date();
         return sdf.format(date);
     }
 
-    public static String getCurrentDateTimeAsString()
-    {
+    public static String getCurrentDateTimeAsString() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         Date date = new Date();
         return sdf.format(date);
     }
 
-    public static void writeToFile(String sData,String sFilePath) throws IOException
-    {
+    public static void writeToFile(String sData, String sFilePath) throws IOException {
         try {
-            Files.write(Paths.get(sFilePath),sData.getBytes(), StandardOpenOption.CREATE,StandardOpenOption.APPEND);
-        }catch (IOException e) {
+            Files.write(Paths.get(sFilePath), sData.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

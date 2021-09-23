@@ -4,12 +4,12 @@ package com.crm.aotg.integration.salesorder.dto;
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class TransferFromQuotationDocument implements Serializable
-{
+public class TransferFromQuotationDocument implements Serializable {
 
     @SerializedName("FullTransferFromSalesDocument")
     @Expose
@@ -21,13 +21,11 @@ public class TransferFromQuotationDocument implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public TransferFromQuotationDocument() {
     }
 
     /**
-     * 
      * @param partialTransferFromSalesDocument
      * @param fullTransferFromSalesDocument
      */
@@ -59,14 +57,14 @@ public class TransferFromQuotationDocument implements Serializable
         sb.append(TransferFromQuotationDocument.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("fullTransferFromSalesDocument");
         sb.append('=');
-        sb.append(((this.fullTransferFromSalesDocument == null)?"<null>":this.fullTransferFromSalesDocument));
+        sb.append(((this.fullTransferFromSalesDocument == null) ? "<null>" : this.fullTransferFromSalesDocument));
         sb.append(',');
         sb.append("partialTransferFromSalesDocument");
         sb.append('=');
-        sb.append(((this.partialTransferFromSalesDocument == null)?"<null>":this.partialTransferFromSalesDocument));
+        sb.append(((this.partialTransferFromSalesDocument == null) ? "<null>" : this.partialTransferFromSalesDocument));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

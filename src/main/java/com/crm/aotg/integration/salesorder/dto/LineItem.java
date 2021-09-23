@@ -3,12 +3,12 @@ package com.crm.aotg.integration.salesorder.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class LineItem implements Serializable
-{
+public class LineItem implements Serializable {
 
     @SerializedName("BodyId")
     @Expose
@@ -77,13 +77,11 @@ public class LineItem implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public LineItem() {
     }
 
     /**
-     * 
      * @param productCategoryCode
      * @param uoMCode
      * @param createdByName
@@ -106,7 +104,7 @@ public class LineItem implements Serializable
      * @param createdById
      * @param iAOTGBodyId
      */
-    public LineItem(String bodyId, String productCategoryName, String productCategoryId, String productCategoryCode, String productCode, String uoMName, String uoMId, String uoMCode, String finalAmount, String productIdName, String productIdId, String productIdCode, String quantity, String prodDescription, String discount, String salesPrice, String createdByName, String createdById, String createdDate, String amount,String iAOTGBodyId) {
+    public LineItem(String bodyId, String productCategoryName, String productCategoryId, String productCategoryCode, String productCode, String uoMName, String uoMId, String uoMCode, String finalAmount, String productIdName, String productIdId, String productIdCode, String quantity, String prodDescription, String discount, String salesPrice, String createdByName, String createdById, String createdDate, String amount, String iAOTGBodyId) {
         super();
         this.bodyId = bodyId;
         this.productCategoryName = productCategoryName;
@@ -128,7 +126,7 @@ public class LineItem implements Serializable
         this.createdById = createdById;
         this.createdDate = createdDate;
         this.amount = amount;
-        this.iAOTGBodyId=iAOTGBodyId;
+        this.iAOTGBodyId = iAOTGBodyId;
     }
 
     public String getBodyId() {
@@ -291,9 +289,13 @@ public class LineItem implements Serializable
         this.amount = amount;
     }
 
-    public  String getIAOTGBodyId() {return  iAOTGBodyId; }
+    public String getIAOTGBodyId() {
+        return iAOTGBodyId;
+    }
 
-    public void setiAOTGBodyId(String iAOTGBodyId){ this.iAOTGBodyId = iAOTGBodyId;}
+    public void setiAOTGBodyId(String iAOTGBodyId) {
+        this.iAOTGBodyId = iAOTGBodyId;
+    }
 
     @Override
     public String toString() {
@@ -301,90 +303,90 @@ public class LineItem implements Serializable
         sb.append(LineItem.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("bodyId");
         sb.append('=');
-        sb.append(((this.bodyId == null)?"<null>":this.bodyId));
+        sb.append(((this.bodyId == null) ? "<null>" : this.bodyId));
         sb.append(',');
         sb.append("productCategoryName");
         sb.append('=');
-        sb.append(((this.productCategoryName == null)?"<null>":this.productCategoryName));
+        sb.append(((this.productCategoryName == null) ? "<null>" : this.productCategoryName));
         sb.append(',');
         sb.append("productCategoryId");
         sb.append('=');
-        sb.append(((this.productCategoryId == null)?"<null>":this.productCategoryId));
+        sb.append(((this.productCategoryId == null) ? "<null>" : this.productCategoryId));
         sb.append(',');
         sb.append("productCategoryCode");
         sb.append('=');
-        sb.append(((this.productCategoryCode == null)?"<null>":this.productCategoryCode));
+        sb.append(((this.productCategoryCode == null) ? "<null>" : this.productCategoryCode));
         sb.append(',');
         sb.append("productCode");
         sb.append('=');
-        sb.append(((this.productCode == null)?"<null>":this.productCode));
+        sb.append(((this.productCode == null) ? "<null>" : this.productCode));
         sb.append(',');
         sb.append("uoMName");
         sb.append('=');
-        sb.append(((this.uoMName == null)?"<null>":this.uoMName));
+        sb.append(((this.uoMName == null) ? "<null>" : this.uoMName));
         sb.append(',');
         sb.append("uoMId");
         sb.append('=');
-        sb.append(((this.uoMId == null)?"<null>":this.uoMId));
+        sb.append(((this.uoMId == null) ? "<null>" : this.uoMId));
         sb.append(',');
         sb.append("uoMCode");
         sb.append('=');
-        sb.append(((this.uoMCode == null)?"<null>":this.uoMCode));
+        sb.append(((this.uoMCode == null) ? "<null>" : this.uoMCode));
         sb.append(',');
         sb.append("finalAmount");
         sb.append('=');
-        sb.append(((this.finalAmount == null)?"<null>":this.finalAmount));
+        sb.append(((this.finalAmount == null) ? "<null>" : this.finalAmount));
         sb.append(',');
         sb.append("productIdName");
         sb.append('=');
-        sb.append(((this.productIdName == null)?"<null>":this.productIdName));
+        sb.append(((this.productIdName == null) ? "<null>" : this.productIdName));
         sb.append(',');
         sb.append("productIdId");
         sb.append('=');
-        sb.append(((this.productIdId == null)?"<null>":this.productIdId));
+        sb.append(((this.productIdId == null) ? "<null>" : this.productIdId));
         sb.append(',');
         sb.append("productIdCode");
         sb.append('=');
-        sb.append(((this.productIdCode == null)?"<null>":this.productIdCode));
+        sb.append(((this.productIdCode == null) ? "<null>" : this.productIdCode));
         sb.append(',');
         sb.append("quantity");
         sb.append('=');
-        sb.append(((this.quantity == null)?"<null>":this.quantity));
+        sb.append(((this.quantity == null) ? "<null>" : this.quantity));
         sb.append(',');
         sb.append("prodDescription");
         sb.append('=');
-        sb.append(((this.prodDescription == null)?"<null>":this.prodDescription));
+        sb.append(((this.prodDescription == null) ? "<null>" : this.prodDescription));
         sb.append(',');
         sb.append("discount");
         sb.append('=');
-        sb.append(((this.discount == null)?"<null>":this.discount));
+        sb.append(((this.discount == null) ? "<null>" : this.discount));
         sb.append(',');
         sb.append("salesPrice");
         sb.append('=');
-        sb.append(((this.salesPrice == null)?"<null>":this.salesPrice));
+        sb.append(((this.salesPrice == null) ? "<null>" : this.salesPrice));
         sb.append(',');
         sb.append("createdByName");
         sb.append('=');
-        sb.append(((this.createdByName == null)?"<null>":this.createdByName));
+        sb.append(((this.createdByName == null) ? "<null>" : this.createdByName));
         sb.append(',');
         sb.append("createdById");
         sb.append('=');
-        sb.append(((this.createdById == null)?"<null>":this.createdById));
+        sb.append(((this.createdById == null) ? "<null>" : this.createdById));
         sb.append(',');
         sb.append("createdDate");
         sb.append('=');
-        sb.append(((this.createdDate == null)?"<null>":this.createdDate));
+        sb.append(((this.createdDate == null) ? "<null>" : this.createdDate));
         sb.append(',');
         sb.append("amount");
         sb.append('=');
-        sb.append(((this.amount == null)?"<null>":this.amount));
+        sb.append(((this.amount == null) ? "<null>" : this.amount));
         sb.append(',');
         sb.append("iaootgId");
         sb.append('=');
-        sb.append(((this.iAOTGBodyId == null)?"<null>":this.iAOTGBodyId));
+        sb.append(((this.iAOTGBodyId == null) ? "<null>" : this.iAOTGBodyId));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

@@ -18,13 +18,13 @@ public class CLAOTGAuthService {
     @Autowired
     private CLUtils clUtils;
 
-    public String getNewAccessToken(){
-        String sAccessToken="";
-        String sAOTGAuthUrl = clUtils.getValueFromPropFile("aotg.url")+CLConstants.AOTH_AUTH;
+    public String getNewAccessToken() {
+        String sAccessToken = "";
+        String sAOTGAuthUrl = clUtils.getValueFromPropFile("aotg.url") + CLConstants.AOTH_AUTH;
         Gson gson = new Gson();
 
         Map<String, String> auth_headers = new HashMap<String, String>();
-        auth_headers.put("content-type","application/json");
+        auth_headers.put("content-type", "application/json");
 
         CLAuthRequestDto clAuthRequestDto = new CLAuthRequestDto();
         clAuthRequestDto.setUserName(clUtils.getValueFromPropFile("aotg.username"));
@@ -32,18 +32,18 @@ public class CLAOTGAuthService {
         clAuthRequestDto.setApiKey(clUtils.getValueFromPropFile("aotg.apikey"));
 
         String sFinalJson = gson.toJson(clAuthRequestDto);
-        HttpResponse<String> response = clUtils.sendPostRequest(sAOTGAuthUrl,auth_headers,sFinalJson);
+        HttpResponse<String> response = clUtils.sendPostRequest(sAOTGAuthUrl, auth_headers, sFinalJson);
 
-        if(response.getStatus()==200){
-            System.out.println("AOTG_AUTH_RESP_STATUS_CODE  :"+response.getStatus());
-            System.out.println("AOTG_AUTH_RESP_STATUS_TEXT  :"+response.getStatusText());
-            CLAuthResponseDto clAuthResponseDto = gson.fromJson(response.getBody(),CLAuthResponseDto.class);
+        if (response.getStatus() == 200) {
+            System.out.println("AOTG_AUTH_RESP_STATUS_CODE  :" + response.getStatus());
+            System.out.println("AOTG_AUTH_RESP_STATUS_TEXT  :" + response.getStatusText());
+            CLAuthResponseDto clAuthResponseDto = gson.fromJson(response.getBody(), CLAuthResponseDto.class);
             sAccessToken = clAuthResponseDto.getAccessToken();
-            System.out.println("AOTG_AUTH_ACCESSTOKEN       :"+sAccessToken);
-        }else {
-            System.out.println("AOTG_AUTH_RESP_STATUS_CODE  :"+response.getStatus());
-            System.out.println("AOTG_AUTH_RESP_STATUS_TEXT  :"+response.getStatusText());
-            System.out.println("AOTG_AUTH_RESP_BODY         :"+response.getBody());
+            System.out.println("AOTG_AUTH_ACCESSTOKEN       :" + sAccessToken);
+        } else {
+            System.out.println("AOTG_AUTH_RESP_STATUS_CODE  :" + response.getStatus());
+            System.out.println("AOTG_AUTH_RESP_STATUS_TEXT  :" + response.getStatusText());
+            System.out.println("AOTG_AUTH_RESP_BODY         :" + response.getBody());
         }
         return sAccessToken;
     }

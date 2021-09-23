@@ -2,12 +2,12 @@ package com.crm.aotg.integration.common.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class CLAOTGRequestStatusDto implements Serializable
-{
+public class CLAOTGRequestStatusDto implements Serializable {
 
     @SerializedName("RequestId")
     @Expose
@@ -19,13 +19,11 @@ public class CLAOTGRequestStatusDto implements Serializable
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public CLAOTGRequestStatusDto() {
     }
 
     /**
-     *
      * @param requestId
      * @param status
      */
@@ -57,14 +55,14 @@ public class CLAOTGRequestStatusDto implements Serializable
         sb.append(CLAOTGRequestStatusDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("requestId");
         sb.append('=');
-        sb.append(((this.requestId == null)?"<null>":this.requestId));
+        sb.append(((this.requestId == null) ? "<null>" : this.requestId));
         sb.append(',');
         sb.append("status");
         sb.append('=');
-        sb.append(((this.status == null)?"<null>":this.status));
+        sb.append(((this.status == null) ? "<null>" : this.status));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

@@ -3,12 +3,12 @@ package com.crm.aotg.integration.product.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class Uom implements Serializable
-{
+public class Uom implements Serializable {
 
     @SerializedName("UOM")
     @Expose
@@ -77,13 +77,11 @@ public class Uom implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public Uom() {
     }
 
     /**
-     * 
      * @param normalLevel
      * @param reOrderLevel
      * @param rowState
@@ -305,90 +303,90 @@ public class Uom implements Serializable
         sb.append(Uom.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("uom");
         sb.append('=');
-        sb.append(((this.uom == null)?"<null>":this.uom));
+        sb.append(((this.uom == null) ? "<null>" : this.uom));
         sb.append(',');
         sb.append("rowState");
         sb.append('=');
-        sb.append(((this.rowState == null)?"<null>":this.rowState));
+        sb.append(((this.rowState == null) ? "<null>" : this.rowState));
         sb.append(',');
         sb.append("rate");
         sb.append('=');
-        sb.append(((this.rate == null)?"<null>":this.rate));
+        sb.append(((this.rate == null) ? "<null>" : this.rate));
         sb.append(',');
         sb.append("price");
         sb.append('=');
-        sb.append(((this.price == null)?"<null>":this.price));
+        sb.append(((this.price == null) ? "<null>" : this.price));
         sb.append(',');
         sb.append("stdCost");
         sb.append('=');
-        sb.append(((this.stdCost == null)?"<null>":this.stdCost));
+        sb.append(((this.stdCost == null) ? "<null>" : this.stdCost));
         sb.append(',');
         sb.append("barCode");
         sb.append('=');
-        sb.append(((this.barCode == null)?"<null>":this.barCode));
+        sb.append(((this.barCode == null) ? "<null>" : this.barCode));
         sb.append(',');
         sb.append("shelf");
         sb.append('=');
-        sb.append(((this.shelf == null)?"<null>":this.shelf));
+        sb.append(((this.shelf == null) ? "<null>" : this.shelf));
         sb.append(',');
         sb.append("weight");
         sb.append('=');
-        sb.append(((this.weight == null)?"<null>":this.weight));
+        sb.append(((this.weight == null) ? "<null>" : this.weight));
         sb.append(',');
         sb.append("weightUOM");
         sb.append('=');
-        sb.append(((this.weightUOM == null)?"<null>":this.weightUOM));
+        sb.append(((this.weightUOM == null) ? "<null>" : this.weightUOM));
         sb.append(',');
         sb.append("volume");
         sb.append('=');
-        sb.append(((this.volume == null)?"<null>":this.volume));
+        sb.append(((this.volume == null) ? "<null>" : this.volume));
         sb.append(',');
         sb.append("volumeUOM");
         sb.append('=');
-        sb.append(((this.volumeUOM == null)?"<null>":this.volumeUOM));
+        sb.append(((this.volumeUOM == null) ? "<null>" : this.volumeUOM));
         sb.append(',');
         sb.append("minSellingPrice");
         sb.append('=');
-        sb.append(((this.minSellingPrice == null)?"<null>":this.minSellingPrice));
+        sb.append(((this.minSellingPrice == null) ? "<null>" : this.minSellingPrice));
         sb.append(',');
         sb.append("maxSellingPrice");
         sb.append('=');
-        sb.append(((this.maxSellingPrice == null)?"<null>":this.maxSellingPrice));
+        sb.append(((this.maxSellingPrice == null) ? "<null>" : this.maxSellingPrice));
         sb.append(',');
         sb.append("minPurchasePrice");
         sb.append('=');
-        sb.append(((this.minPurchasePrice == null)?"<null>":this.minPurchasePrice));
+        sb.append(((this.minPurchasePrice == null) ? "<null>" : this.minPurchasePrice));
         sb.append(',');
         sb.append("maxPurchasePrice");
         sb.append('=');
-        sb.append(((this.maxPurchasePrice == null)?"<null>":this.maxPurchasePrice));
+        sb.append(((this.maxPurchasePrice == null) ? "<null>" : this.maxPurchasePrice));
         sb.append(',');
         sb.append("minQty");
         sb.append('=');
-        sb.append(((this.minQty == null)?"<null>":this.minQty));
+        sb.append(((this.minQty == null) ? "<null>" : this.minQty));
         sb.append(',');
         sb.append("maxQty");
         sb.append('=');
-        sb.append(((this.maxQty == null)?"<null>":this.maxQty));
+        sb.append(((this.maxQty == null) ? "<null>" : this.maxQty));
         sb.append(',');
         sb.append("reOrderQty");
         sb.append('=');
-        sb.append(((this.reOrderQty == null)?"<null>":this.reOrderQty));
+        sb.append(((this.reOrderQty == null) ? "<null>" : this.reOrderQty));
         sb.append(',');
         sb.append("balQty");
         sb.append('=');
-        sb.append(((this.balQty == null)?"<null>":this.balQty));
+        sb.append(((this.balQty == null) ? "<null>" : this.balQty));
         sb.append(',');
         sb.append("reOrderLevel");
         sb.append('=');
-        sb.append(((this.reOrderLevel == null)?"<null>":this.reOrderLevel));
+        sb.append(((this.reOrderLevel == null) ? "<null>" : this.reOrderLevel));
         sb.append(',');
         sb.append("normalLevel");
         sb.append('=');
-        sb.append(((this.normalLevel == null)?"<null>":this.normalLevel));
+        sb.append(((this.normalLevel == null) ? "<null>" : this.normalLevel));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

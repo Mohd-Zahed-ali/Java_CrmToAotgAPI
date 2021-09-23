@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class IntegrationApplication {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		SpringApplication.run(IntegrationApplication.class, args);
-		System.out.println("Integration Server Started..");
-	}
+        SpringApplication.run(IntegrationApplication.class, args);
+        System.out.println("Integration Server Started..");
+    }
 
 }

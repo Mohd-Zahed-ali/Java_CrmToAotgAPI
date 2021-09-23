@@ -2,12 +2,12 @@ package com.crm.aotg.integration.common.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class CLAOTGInitialRequestDto implements Serializable
-{
+public class CLAOTGInitialRequestDto implements Serializable {
 
     @SerializedName("Id")
     @Expose
@@ -25,13 +25,11 @@ public class CLAOTGInitialRequestDto implements Serializable
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public CLAOTGInitialRequestDto() {
     }
 
     /**
-     *
      * @param name
      * @param id
      * @param endTimestamp
@@ -83,22 +81,22 @@ public class CLAOTGInitialRequestDto implements Serializable
         sb.append(CLAOTGInitialRequestDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("id");
         sb.append('=');
-        sb.append(((this.id == null)?"<null>":this.id));
+        sb.append(((this.id == null) ? "<null>" : this.id));
         sb.append(',');
         sb.append("name");
         sb.append('=');
-        sb.append(((this.name == null)?"<null>":this.name));
+        sb.append(((this.name == null) ? "<null>" : this.name));
         sb.append(',');
         sb.append("startTimestamp");
         sb.append('=');
-        sb.append(((this.startTimestamp == null)?"<null>":this.startTimestamp));
+        sb.append(((this.startTimestamp == null) ? "<null>" : this.startTimestamp));
         sb.append(',');
         sb.append("endTimestamp");
         sb.append('=');
-        sb.append(((this.endTimestamp == null)?"<null>":this.endTimestamp));
+        sb.append(((this.endTimestamp == null) ? "<null>" : this.endTimestamp));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

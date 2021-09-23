@@ -19,13 +19,11 @@ public class CLAuthRequestDto {
 
     /**
      * No args constructor for use in serialization
-     *
      */
     public CLAuthRequestDto() {
     }
 
     /**
-     *
      * @param password
      * @param apiKey
      * @param userName
@@ -67,18 +65,18 @@ public class CLAuthRequestDto {
         sb.append(CLAuthRequestDto.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("userName");
         sb.append('=');
-        sb.append(((this.userName == null)?"<null>":this.userName));
+        sb.append(((this.userName == null) ? "<null>" : this.userName));
         sb.append(',');
         sb.append("password");
         sb.append('=');
-        sb.append(((this.password == null)?"<null>":this.password));
+        sb.append(((this.password == null) ? "<null>" : this.password));
         sb.append(',');
         sb.append("apiKey");
         sb.append('=');
-        sb.append(((this.apiKey == null)?"<null>":this.apiKey));
+        sb.append(((this.apiKey == null) ? "<null>" : this.apiKey));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

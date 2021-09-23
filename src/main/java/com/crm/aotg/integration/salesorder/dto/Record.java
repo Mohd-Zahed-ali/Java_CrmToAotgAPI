@@ -3,12 +3,12 @@ package com.crm.aotg.integration.salesorder.dto;
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class Record implements Serializable
-{
+public class Record implements Serializable {
 
     @SerializedName("attributes")
     @Expose
@@ -161,13 +161,11 @@ public class Record implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public Record() {
     }
 
     /**
-     * 
      * @param date
      * @param serviceType
      * @param createdByName
@@ -669,202 +667,202 @@ public class Record implements Serializable
         sb.append(Record.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("attributes");
         sb.append('=');
-        sb.append(((this.attributes == null)?"<null>":this.attributes));
+        sb.append(((this.attributes == null) ? "<null>" : this.attributes));
         sb.append(',');
         sb.append("transId");
         sb.append('=');
-        sb.append(((this.transId == null)?"<null>":this.transId));
+        sb.append(((this.transId == null) ? "<null>" : this.transId));
         sb.append(',');
         sb.append("name");
         sb.append('=');
-        sb.append(((this.name == null)?"<null>":this.name));
+        sb.append(((this.name == null) ? "<null>" : this.name));
         sb.append(',');
         sb.append("expiryDate");
         sb.append('=');
-        sb.append(((this.expiryDate == null)?"<null>":this.expiryDate));
+        sb.append(((this.expiryDate == null) ? "<null>" : this.expiryDate));
         sb.append(',');
         sb.append("opportunityIdName");
         sb.append('=');
-        sb.append(((this.opportunityIdName == null)?"<null>":this.opportunityIdName));
+        sb.append(((this.opportunityIdName == null) ? "<null>" : this.opportunityIdName));
         sb.append(',');
         sb.append("opportunityIdId");
         sb.append('=');
-        sb.append(((this.opportunityIdId == null)?"<null>":this.opportunityIdId));
+        sb.append(((this.opportunityIdId == null) ? "<null>" : this.opportunityIdId));
         sb.append(',');
         sb.append("description");
         sb.append('=');
-        sb.append(((this.description == null)?"<null>":this.description));
+        sb.append(((this.description == null) ? "<null>" : this.description));
         sb.append(',');
         sb.append("syncType");
         sb.append('=');
-        sb.append(((this.syncType == null)?"<null>":this.syncType));
+        sb.append(((this.syncType == null) ? "<null>" : this.syncType));
         sb.append(',');
         sb.append("createdByName");
         sb.append('=');
-        sb.append(((this.createdByName == null)?"<null>":this.createdByName));
+        sb.append(((this.createdByName == null) ? "<null>" : this.createdByName));
         sb.append(',');
         sb.append("createdById");
         sb.append('=');
-        sb.append(((this.createdById == null)?"<null>":this.createdById));
+        sb.append(((this.createdById == null) ? "<null>" : this.createdById));
         sb.append(',');
         sb.append("createdDate");
         sb.append('=');
-        sb.append(((this.createdDate == null)?"<null>":this.createdDate));
+        sb.append(((this.createdDate == null) ? "<null>" : this.createdDate));
         sb.append(',');
         sb.append("modifiedByName");
         sb.append('=');
-        sb.append(((this.modifiedByName == null)?"<null>":this.modifiedByName));
+        sb.append(((this.modifiedByName == null) ? "<null>" : this.modifiedByName));
         sb.append(',');
         sb.append("modifiedById");
         sb.append('=');
-        sb.append(((this.modifiedById == null)?"<null>":this.modifiedById));
+        sb.append(((this.modifiedById == null) ? "<null>" : this.modifiedById));
         sb.append(',');
         sb.append("modifiedDate");
         sb.append('=');
-        sb.append(((this.modifiedDate == null)?"<null>":this.modifiedDate));
+        sb.append(((this.modifiedDate == null) ? "<null>" : this.modifiedDate));
         sb.append(',');
         sb.append("subTotal");
         sb.append('=');
-        sb.append(((this.subTotal == null)?"<null>":this.subTotal));
+        sb.append(((this.subTotal == null) ? "<null>" : this.subTotal));
         sb.append(',');
         sb.append("approvalRemarks");
         sb.append('=');
-        sb.append(((this.approvalRemarks == null)?"<null>":this.approvalRemarks));
+        sb.append(((this.approvalRemarks == null) ? "<null>" : this.approvalRemarks));
         sb.append(',');
         sb.append("assignedToName");
         sb.append('=');
-        sb.append(((this.assignedToName == null)?"<null>":this.assignedToName));
+        sb.append(((this.assignedToName == null) ? "<null>" : this.assignedToName));
         sb.append(',');
         sb.append("assignedToId");
         sb.append('=');
-        sb.append(((this.assignedToId == null)?"<null>":this.assignedToId));
+        sb.append(((this.assignedToId == null) ? "<null>" : this.assignedToId));
         sb.append(',');
         sb.append("isRead");
         sb.append('=');
-        sb.append(((this.isRead == null)?"<null>":this.isRead));
+        sb.append(((this.isRead == null) ? "<null>" : this.isRead));
         sb.append(',');
         sb.append("locationIdName");
         sb.append('=');
-        sb.append(((this.locationIdName == null)?"<null>":this.locationIdName));
+        sb.append(((this.locationIdName == null) ? "<null>" : this.locationIdName));
         sb.append(',');
         sb.append("locationIdId");
         sb.append('=');
-        sb.append(((this.locationIdId == null)?"<null>":this.locationIdId));
+        sb.append(((this.locationIdId == null) ? "<null>" : this.locationIdId));
         sb.append(',');
         sb.append("locationIdCode");
         sb.append('=');
-        sb.append(((this.locationIdCode == null)?"<null>":this.locationIdCode));
+        sb.append(((this.locationIdCode == null) ? "<null>" : this.locationIdCode));
         sb.append(',');
         sb.append("salesOrderStatusName");
         sb.append('=');
-        sb.append(((this.salesOrderStatusName == null)?"<null>":this.salesOrderStatusName));
+        sb.append(((this.salesOrderStatusName == null) ? "<null>" : this.salesOrderStatusName));
         sb.append(',');
         sb.append("salesOrderStatusId");
         sb.append('=');
-        sb.append(((this.salesOrderStatusId == null)?"<null>":this.salesOrderStatusId));
+        sb.append(((this.salesOrderStatusId == null) ? "<null>" : this.salesOrderStatusId));
         sb.append(',');
         sb.append("contactIdName");
         sb.append('=');
-        sb.append(((this.contactIdName == null)?"<null>":this.contactIdName));
+        sb.append(((this.contactIdName == null) ? "<null>" : this.contactIdName));
         sb.append(',');
         sb.append("contactIdId");
         sb.append('=');
-        sb.append(((this.contactIdId == null)?"<null>":this.contactIdId));
+        sb.append(((this.contactIdId == null) ? "<null>" : this.contactIdId));
         sb.append(',');
         sb.append("contactIdCode");
         sb.append('=');
-        sb.append(((this.contactIdCode == null)?"<null>":this.contactIdCode));
+        sb.append(((this.contactIdCode == null) ? "<null>" : this.contactIdCode));
         sb.append(',');
         sb.append("mailSent");
         sb.append('=');
-        sb.append(((this.mailSent == null)?"<null>":this.mailSent));
+        sb.append(((this.mailSent == null) ? "<null>" : this.mailSent));
         sb.append(',');
         sb.append("tax");
         sb.append('=');
-        sb.append(((this.tax == null)?"<null>":this.tax));
+        sb.append(((this.tax == null) ? "<null>" : this.tax));
         sb.append(',');
         sb.append("overallDiscount");
         sb.append('=');
-        sb.append(((this.overallDiscount == null)?"<null>":this.overallDiscount));
+        sb.append(((this.overallDiscount == null) ? "<null>" : this.overallDiscount));
         sb.append(',');
         sb.append("grandTotal");
         sb.append('=');
-        sb.append(((this.grandTotal == null)?"<null>":this.grandTotal));
+        sb.append(((this.grandTotal == null) ? "<null>" : this.grandTotal));
         sb.append(',');
         sb.append("currencyName");
         sb.append('=');
-        sb.append(((this.currencyName == null)?"<null>":this.currencyName));
+        sb.append(((this.currencyName == null) ? "<null>" : this.currencyName));
         sb.append(',');
         sb.append("currencyId");
         sb.append('=');
-        sb.append(((this.currencyId == null)?"<null>":this.currencyId));
+        sb.append(((this.currencyId == null) ? "<null>" : this.currencyId));
         sb.append(',');
         sb.append("exchangeRate");
         sb.append('=');
-        sb.append(((this.exchangeRate == null)?"<null>":this.exchangeRate));
+        sb.append(((this.exchangeRate == null) ? "<null>" : this.exchangeRate));
         sb.append(',');
         sb.append("status");
         sb.append('=');
-        sb.append(((this.status == null)?"<null>":this.status));
+        sb.append(((this.status == null) ? "<null>" : this.status));
         sb.append(',');
         sb.append("assignedtoOperationName");
         sb.append('=');
-        sb.append(((this.assignedtoOperationName == null)?"<null>":this.assignedtoOperationName));
+        sb.append(((this.assignedtoOperationName == null) ? "<null>" : this.assignedtoOperationName));
         sb.append(',');
         sb.append("assignedtoOperationId");
         sb.append('=');
-        sb.append(((this.assignedtoOperationId == null)?"<null>":this.assignedtoOperationId));
+        sb.append(((this.assignedtoOperationId == null) ? "<null>" : this.assignedtoOperationId));
         sb.append(',');
         sb.append("date");
         sb.append('=');
-        sb.append(((this.date == null)?"<null>":this.date));
+        sb.append(((this.date == null) ? "<null>" : this.date));
         sb.append(',');
         sb.append("quoteName");
         sb.append('=');
-        sb.append(((this.quoteName == null)?"<null>":this.quoteName));
+        sb.append(((this.quoteName == null) ? "<null>" : this.quoteName));
         sb.append(',');
         sb.append("quoteId");
         sb.append('=');
-        sb.append(((this.quoteId == null)?"<null>":this.quoteId));
+        sb.append(((this.quoteId == null) ? "<null>" : this.quoteId));
         sb.append(',');
         sb.append("accountName");
         sb.append('=');
-        sb.append(((this.accountName == null)?"<null>":this.accountName));
+        sb.append(((this.accountName == null) ? "<null>" : this.accountName));
         sb.append(',');
         sb.append("accountId");
         sb.append('=');
-        sb.append(((this.accountId == null)?"<null>":this.accountId));
+        sb.append(((this.accountId == null) ? "<null>" : this.accountId));
         sb.append(',');
         sb.append("accountCode");
         sb.append('=');
-        sb.append(((this.accountCode == null)?"<null>":this.accountCode));
+        sb.append(((this.accountCode == null) ? "<null>" : this.accountCode));
         sb.append(',');
         sb.append("serviceType");
         sb.append('=');
-        sb.append(((this.serviceType == null)?"<null>":this.serviceType));
+        sb.append(((this.serviceType == null) ? "<null>" : this.serviceType));
         sb.append(',');
         sb.append("totalPaymentReceived");
         sb.append('=');
-        sb.append(((this.totalPaymentReceived == null)?"<null>":this.totalPaymentReceived));
+        sb.append(((this.totalPaymentReceived == null) ? "<null>" : this.totalPaymentReceived));
         sb.append(',');
         sb.append("iAutoCountId");
         sb.append('=');
-        sb.append(((this.iAutoCountId == null)?"<null>":this.iAutoCountId));
+        sb.append(((this.iAutoCountId == null) ? "<null>" : this.iAutoCountId));
         sb.append(',');
         sb.append("aotgsoid");
         sb.append('=');
-        sb.append(((this.aotgsoid == null)?"<null>":this.aotgsoid));
+        sb.append(((this.aotgsoid == null) ? "<null>" : this.aotgsoid));
         sb.append(',');
         sb.append("lineItems");
         sb.append('=');
-        sb.append(((this.lineItems == null)?"<null>":this.lineItems));
+        sb.append(((this.lineItems == null) ? "<null>" : this.lineItems));
         sb.append(',');
         sb.append("lineItems2");
         sb.append('=');
-        sb.append(((this.lineItems2 == null)?"<null>":this.lineItems2));
+        sb.append(((this.lineItems2 == null) ? "<null>" : this.lineItems2));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

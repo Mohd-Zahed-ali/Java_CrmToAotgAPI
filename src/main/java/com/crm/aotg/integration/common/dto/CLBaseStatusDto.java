@@ -1,6 +1,7 @@
 package com.crm.aotg.integration.common.dto;
 
 import lombok.Data;
+
 import java.io.Serializable;
 
 @Data

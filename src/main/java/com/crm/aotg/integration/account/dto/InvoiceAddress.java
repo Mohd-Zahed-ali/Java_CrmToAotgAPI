@@ -3,12 +3,12 @@ package com.crm.aotg.integration.account.dto;
 
 import java.io.Serializable;
 import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("jsonschema2pojo")
-public class InvoiceAddress implements Serializable
-{
+public class InvoiceAddress implements Serializable {
 
     @SerializedName("Contact")
     @Expose
@@ -35,13 +35,11 @@ public class InvoiceAddress implements Serializable
 
     /**
      * No args constructor for use in serialization
-     * 
      */
     public InvoiceAddress() {
     }
 
     /**
-     * 
      * @param address3
      * @param phone
      * @param address2
@@ -123,34 +121,34 @@ public class InvoiceAddress implements Serializable
         sb.append(InvoiceAddress.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
         sb.append("contact");
         sb.append('=');
-        sb.append(((this.contact == null)?"<null>":this.contact));
+        sb.append(((this.contact == null) ? "<null>" : this.contact));
         sb.append(',');
         sb.append("fax");
         sb.append('=');
-        sb.append(((this.fax == null)?"<null>":this.fax));
+        sb.append(((this.fax == null) ? "<null>" : this.fax));
         sb.append(',');
         sb.append("phone");
         sb.append('=');
-        sb.append(((this.phone == null)?"<null>":this.phone));
+        sb.append(((this.phone == null) ? "<null>" : this.phone));
         sb.append(',');
         sb.append("address1");
         sb.append('=');
-        sb.append(((this.address1 == null)?"<null>":this.address1));
+        sb.append(((this.address1 == null) ? "<null>" : this.address1));
         sb.append(',');
         sb.append("address2");
         sb.append('=');
-        sb.append(((this.address2 == null)?"<null>":this.address2));
+        sb.append(((this.address2 == null) ? "<null>" : this.address2));
         sb.append(',');
         sb.append("address3");
         sb.append('=');
-        sb.append(((this.address3 == null)?"<null>":this.address3));
+        sb.append(((this.address3 == null) ? "<null>" : this.address3));
         sb.append(',');
         sb.append("address4");
         sb.append('=');
-        sb.append(((this.address4 == null)?"<null>":this.address4));
+        sb.append(((this.address4 == null) ? "<null>" : this.address4));
         sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
+        if (sb.charAt((sb.length() - 1)) == ',') {
+            sb.setCharAt((sb.length() - 1), ']');
         } else {
             sb.append(']');
         }

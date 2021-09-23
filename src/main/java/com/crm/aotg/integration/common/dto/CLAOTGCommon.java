@@ -14,24 +14,24 @@ public class CLAOTGCommon {
     @Autowired
     private CLUtils clUtils;
 
-    public CLAOTGRequestStatusDto getRequestStatus(String sURL, Map<String,String > aoth_headers){
+    public CLAOTGRequestStatusDto getRequestStatus(String sURL, Map<String, String> aoth_headers) {
         Gson gson = new Gson();
         CLAOTGRequestStatusDto claotgRequestStatusDto = new CLAOTGRequestStatusDto();
         String sResp = "";
-        HttpResponse<String> response = clUtils.sendGetRequest(sURL,aoth_headers);
-        if(response.getStatus()==200){
-            claotgRequestStatusDto = gson.fromJson(response.getBody(),CLAOTGRequestStatusDto.class);
+        HttpResponse<String> response = clUtils.sendGetRequest(sURL, aoth_headers);
+        if (response.getStatus() == 200) {
+            claotgRequestStatusDto = gson.fromJson(response.getBody(), CLAOTGRequestStatusDto.class);
         }
         return claotgRequestStatusDto;
     }
 
-    public CLAOTGResultDto getRequestResult(String sURL, Map<String,String > aoth_headers){
+    public CLAOTGResultDto getRequestResult(String sURL, Map<String, String> aoth_headers) {
         Gson gson = new Gson();
         CLAOTGResultDto claotgResultDto = new CLAOTGResultDto();
         String sResp = "";
-        HttpResponse<String> response = clUtils.sendGetRequest(sURL,aoth_headers);
-        if(response.getStatus()==200){
-            claotgResultDto = gson.fromJson(response.getBody(),CLAOTGResultDto.class);
+        HttpResponse<String> response = clUtils.sendGetRequest(sURL, aoth_headers);
+        if (response.getStatus() == 200) {
+            claotgResultDto = gson.fromJson(response.getBody(), CLAOTGResultDto.class);
         }
         return claotgResultDto;
     }
