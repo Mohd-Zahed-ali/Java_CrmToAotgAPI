@@ -51,6 +51,14 @@ public class CLAccountService {
                 Log.info("Got AOTG_ID =" + sAOTGId);
                 Log.info("Getting AOTG AccessToken...");
                 aotg_accessToken = claotgAuthService.getNewAccessToken();
+
+                if(aotg_accessToken.equals("")){
+                    clStatus.setStatus(0);
+                    clStatus.setMsg("");
+                    clStatus.setError_msg("Empty AOTG Token");
+                    return clStatus;
+                }
+
                 Log.info("Got AOTG AccessToken :" + aotg_accessToken);
                 String sURL = "";
 
